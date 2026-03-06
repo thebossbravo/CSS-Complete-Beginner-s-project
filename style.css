@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* RESET */
-*,,*::before,*::after {
+*,*::before,*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,7 +48,7 @@ input,button,textarea {
         --BORDERS: 1px solid var(--BORDER-COLOR);
 
        /* STANDARD PADDING */
-         --PADDING-TOPBOTTOM: 1px;
+         --PADDING-TOPBOTTOM: 0.05px;
          --PADDING-LEFTRIGHT: 2.5%;
 
          /* STANDARD MARGIN */
@@ -190,4 +190,30 @@ a:active {
         scaleY(1);
     }
 }
+/* 
+FOOTER */
+.footer {
+   position: sticky;
+   bottom: 0;
+   background-color: var(--HEADER-BGCOLOR);
+   color: var(--HEADER-COLOR);
+   padding: var(--PADDING-TOPBOTTOM) var(--PADDING-LEFTRIGHT);
+   text-align: center;
+}
 
+.main {
+    padding: var(--PADDING-TOPBOTTOM) var(--PADDING-LEFTRIGHT);
+}
+
+.main__article {
+    margin: var(--MARGIN);
+    scroll-margin-top: 6.5rem;
+}
+
+.main__article:first-child {
+    margin-top: 0.5em;
+}
+
+.main__article:last-child {
+    min-height: calc(100vh - 20rem);
+}
